@@ -1,6 +1,6 @@
 :root{
-  --var-cor-de-fundo: hsl(0, 0%, 100%);
-  --var-cor-de-fundo-secundario: hsl(191, 98%, 56%);
+  --var-cor-azul: hsl(206, 71%, 54%);
+  --var-cor-hover-azul-escuro: hsl(206, 46%, 39%);
   --var-cor-de-texto: hsl(0, 0%, 10%);
   
 }
