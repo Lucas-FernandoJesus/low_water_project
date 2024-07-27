@@ -1,3 +1,6 @@
+<?php
+  include("./Front/menu.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
