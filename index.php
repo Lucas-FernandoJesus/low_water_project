@@ -1,6 +1,3 @@
-<?php
-  include("./Front/menu.php");
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,7 +19,7 @@
           <input type="password" name="password" id="password" placeholder="Password">
           <input type="submit" name="acao" id="submit" value="Open">
           <p id="forget-password">
-            Esqueci minha senha
+            <a href="#">Esqueci minha senha</a>
           </p>
         </div>
       </form>

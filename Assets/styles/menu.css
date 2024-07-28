@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("./variaveis.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  background-color: var(--var-cor-azul);
+  height: 100vh;
+  width: 15vw;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#container-menu{
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+  height: 40%;
+  width: 100%;
+}
+
+#container-information-menu{
+  margin-top: 50%;
+  /* background-color: red; */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  padding: 10px 5%;
+  color: var(--var-cor-texto);
+}
+
+.menu-items img {
+  margin-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--var-cor-texto);
+  display: flex;
+  align-items: center;
+}

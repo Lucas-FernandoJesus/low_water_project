@@ -1,6 +1,6 @@
 :root{
   --var-cor-azul: hsl(206, 71%, 54%);
   --var-cor-hover-azul-escuro: hsl(206, 46%, 39%);
-  --var-cor-de-texto: hsl(0, 0%, 10%);
-  
+  --var-cor-de-texto-sistema: hsl(0, 0%, 10%);
+  --var-cor-texto: hsl(0, 0%, 100%);
 }
