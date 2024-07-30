@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-section{
+#section-menu{
   background-color: var(--var-cor-azul);
   height: 100vh;
   width: 15vw;
@@ -20,14 +20,13 @@ section{
 #container-menu{
   display: flex;
   flex-direction: column;
-  /* background-color: black; */
-  height: 40%;
+  /* height: 40%; */
   width: 100%;
 }
 
 #container-information-menu{
   margin-top: 50%;
-  /* background-color: red; */
+  margin-left: 15%;
 }
 
 ul {
