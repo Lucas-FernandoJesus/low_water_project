@@ -5,17 +5,94 @@
     <title>Low Water</title>
   </head>
   
-  <section id="section-menu">
-    <div id="container-menu">
-      <div id="container-information-menu">
-        <ul>
-          <li class="menu-items"><a href="./dashboard.php"><img src="../Image/icon-dashboard.svg" alt="dashboard">Dashboard</a></li>
-          <li class="menu-items"><a href="./unit.php"><img src="../Image/icon-unit.svg" alt="unit">Unit</a></li>
-          <li class="menu-items"><a href="./users.php"><img src="../Image/icon-user.svg" alt="User">Users</a></li>
-          <li class="menu-items"><a href="./documents.php"><img src="../Image/icon-documents.svg" alt="documents">Docuements</a></li>
-          <li class="menu-items"><a href="#"><img src="../Image/icon-logout.svg" alt="logout">Logout</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <aside class="sidebar">
+    <header class="sidebar_header">
+      <img class="logo_img" src="../Image/icon-logo.svg" alt="logo_system">
+    </header>
+
+    <nav>
+      <button>
+        <img src="../Image/icon-dashboard.svg" alt="icon_dashboard">
+        <span>
+          Dashboard
+        </span>
+      </button>
+
+      <button>
+        <img src="../Image/icon-unit.svg" alt="unit">
+        <span>
+          Unit
+        </span>
+      </button>
+
+      <button>
+        <img src="../Image/icon-documents.svg" alt="documents">
+        <span>
+          Documents
+        </span>
+      </button>
+
+      <button>
+        <img src="../Image/icon-user.svg" alt="user">
+        <span>
+          User
+        </span>
+      </button>
+
+      <button>
+        <img src="../Image/icon-logout.svg" alt="logout">
+        <span>
+          Logout
+        </span>
+      </button>
+    </nav>
+    </aside>
+    <!-- MENU -->
+    <button class="button_mobile" onclick="toogle_menu()">
+      <img src="../Image/icon-menu.svg" alt="">
+      <span>Menu</span>
+    </button>
+
+    <nav class="menu_mobile" id="menu_mobile">
+      <button class="button_close" onclick="toggle_menu()">
+        <img src="../Image/icon-close-menu.svg" alt="icon_close_menu">
+      </button>
+
+      <button>
+        <img src="../Image/icon-dashboard.svg" alt="icon_dashboard">
+        <span class="mobile_text">
+          Dashboard
+        </span>
+      </button>
+
+      <button>
+        <img src="../Image/icon-unit.svg" alt="unit">
+        <span class="mobile_text">
+          Unit
+        </span>
+      </button>
+
+      <button>
+        <img src="../Image/icon-documents.svg" alt="documents">
+        <span class="mobile_text">
+          Documents
+        </span>
+      </button>
+
+      <button>
+        <img src="../Image/icon-user.svg" alt="user">
+        <span class="mobile_text">
+          User
+        </span>
+      </button>
+
+      <button>
+        <img src="../Image/icon-logout.svg" alt="logout">
+        <span class="mobile_text">
+          Logout
+        </span>
+      </button>
+    </nav>
+  
+  <script src="../Assets/JS/menu.js" ></script>
 </html>
