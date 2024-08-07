@@ -5,151 +5,144 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body{
-  font-family: sans-serif;
-  background-color: #121212;
-  color: #ffff;
-}
-
-.sidebar{
-  position: fixed;
-  top: 0;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 240px;
-  height: 100vh;
-  padding: 40px 10px 30px 10px;
-  border-right: 1px solid red;
-  transition: all 0.8s;
-}
-
-.sidebar_header{
-  width: 100%;
-  margin-bottom: 16px;
-}
-
-.logo_img{
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  object-fit: cover;
-  transform: 0.4s;
-  margin-left: 10px;
-}
-
-.logo_img:hover{
-  transform: scale(1.5);
-}
-
-.sidebar button {
-  height: 60px;
-  background: transparent;
-  border: 0;
-  font-family: inherit;
-  cursor: pointer;
-  text-align: left;
-  padding: 0;
-}
-
-.sidebar button:hover > span{
-  background: white;
-}
-
-.sidebar button img {
-  position: relative;
-  font-size: 28px;
-  transition: 0.2s;
-}
-
-.sidebar button span{
+  min-height: 100vh;
+  background-color: var(--var-cor-branca);
+  color: var(--var-cor-branca);
   font-size: 16px;
 }
 
-.sidebar nav{
-  flex: 1 1 auto;
+main{
+  padding: 20px;
+}
+
+#sidebar{
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-@media (width < 920px) {
-  .sidebar{
-    width: 72px;
-  }
-  .sidebar button > span{
-    width: 50%;
-  }
-  .sidebar button > span > span{
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-.button_mobile{
-  display: none;
-  align-self: flex-start;
-  align-items: center;
-  margin: 16px;
-  background: transparent;
-  color: #FFF;
-  border: 0;
-}
-
-.button_mobile span{
-  font-size: 18px;
-  margin-left: 8px;
-}
-
-.menu_mobile{
-  display: none;
-}
-
-.menu_mobile_active{
-  width: 100vw;
+  justify-content: space-between;
+  background-color: var(--var-cor-azul);
   height: 100vh;
-  z-index: 99;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
+  transition: all .5s;
+  min-width: 82px;
+}
+
+#sidebar_content{
+  padding: 12px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+#text_title{
+  margin-left: 5px;
+}
+
+#logo{
+  object-fit: cover;
+  width: 100%;
+  height : 80px;
+  font-size: 60px;
+  text-align: center;
+}
+
+#side_items{
   display: flex;
   flex-direction: column;
+  list-style: none;
+  gap: 16px;
+}
+
+.side_item{
+  font-size: inherit;
+}
+
+.side_item i{
+  font-size: 24px;
+}
+
+.side_item a{
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.side_item a i{
+  display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  height: 20px;
 }
 
-.menu_mobile_active button {
-  background: transparent;
-  border: 0;
+#text_margin{
+  margin-left: 15px;
+}
+
+#logout{
+  border-top: 1px solid var(--var-cor-hover-azul-escuro);
+  padding: 12px;
   color: inherit;
-  margin-bottom: 16px;
 }
 
-.menu_mobile_active button > span {
-  display: inline-flex;
+#logout_btn{
+  display: flex;
+  background-color: transparent;
+  font-size: inherit;
+  padding: 12px;
+  gap: 20px;
+  border: none;
   align-items: center;
+  text-align: start;
+  cursor: pointer;
 }
 
-.button_close span img {
+#open_btn{
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+}
+
+.open_btn_icon{
+  transition: transform .3s wase;
+}
+
+.open_sidebar #open_btn_icon{
+  transform: rotate(180deg);
+}
+
+.item_description{
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: width .5s;
+  color: var(--var-cor-branca);
   font-size: 16px;
+  height: 0px;
 }
 
-.mobile_text{
-  font-size: 22px;
-  margin-left: 8px;
+#sidebar.open_sidebar{
+  min-width: 15%;
 }
 
-@media (max-width:480px) {
-  .sidebar{
-    display: none;
-  }
-  .button_mobile{
-    display: flex;
-  }
-  main{
-    margin-left: 6px;
-  }
+#sidebar.open_sidebar .item_description{
+  width: 150px;
+  height: auto;
+}
+
+#sidebar.open_sidebar .side_item a {
+  justify-content: flex-start;
+  gap: 20px;
 }

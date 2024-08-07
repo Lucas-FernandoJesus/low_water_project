@@ -1,10 +1,3 @@
-function toggle_menu(){
-  const menuMobile = document.getElementById("menu_mobile")
-
-  if(menuMobile.className === "menu_mobile_active"){
-    menuMobile.className = "menu_mobile"
-  }
-  else{
-    menuMobile.className = "menu_mobile_active"
-  }
-}
+document.getElementById('open_btn').addEventListener('click', function(){
+  document.getElementById('sidebar').classList.toggle('open_btn_icon');
+})
